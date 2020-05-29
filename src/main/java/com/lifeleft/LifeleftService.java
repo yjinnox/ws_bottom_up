@@ -23,7 +23,7 @@ public class LifeleftService {
 
         Integer anneesRestantes = evDeReference - (Year.now().getValue() - anneeNaissance);
 
-        String valeurDeRetour = "Bonjour "+prenom+", il vous reste "+anneesRestantes+ " à vivre profitez-en au maximum.";
+        String valeurDeRetour = "Bonjour "+prenom+", il vous reste "+anneesRestantes+ "ans à vivre profitez-en au maximum.";
 
         return  valeurDeRetour;
     }
