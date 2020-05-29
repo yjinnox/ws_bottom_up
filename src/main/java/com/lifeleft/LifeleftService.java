@@ -23,7 +23,7 @@ public class LifeleftService {
 
         Integer anneesRestantes = evDeReference - (Year.now().getValue() - anneeNaissance);
 
-        String valeurDeRetour = "Bonjour "+prenom+" il vous reste à vivre "+anneesRestantes+ "année";
+        String valeurDeRetour = "Bonjour "+prenom+", il vous reste "+anneesRestantes+ " à vivre profitez-en au maximum.";
 
         return  valeurDeRetour;
     }
@@ -37,7 +37,7 @@ public class LifeleftService {
     @WebMethod
     public String commanderCompteARebour(Integer clientId) {
 
-        return "Merci ! Votre commande pour le client: "+ clientId + "de compteur de vie est validée";
+        return "Merci ! Votre commande pour le client: "+ clientId + " de compteur de vie est validée";
 
     }
 }
